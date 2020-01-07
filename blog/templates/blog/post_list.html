@@ -6,10 +6,11 @@
 </head>
 <body>
     <h1>blog</h1>
-    {%for p in posts%}
-        <h3>제목 : {{p.title}}</h3>
+    {%for p in object_list%}
+        <h3>title : {{p.title}}</h3>
+        <h5>time : {{p.created}}</h5>
         <h5>author : {{p.author}}</h5>
         <br>
-    {%endfor%}
+    {% endfor %}
 </body>
 </html>
