@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>blog</h1>
+    {%for p in posts%}
+        <h3>제목 : {{p.title}}</h3>
+        <h5>author : {{p.author}}</h5>
+        <br>
+    {%endfor%}
+</body>
+</html>
