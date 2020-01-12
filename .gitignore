@@ -1,5 +1,7 @@
 venv/
 .idea/
+.vscode/
+_media/
 
 *.pyc
 db.sqlite3
