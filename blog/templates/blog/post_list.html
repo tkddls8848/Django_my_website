@@ -96,19 +96,16 @@
             <hr>
 
             <!-- Preview Image -->
-            <img class="img-fluid rounded" src="{{p.head_image.url}}" alt="image">
-
+            {%if p.head_image%}
+                <img class="img-fluid rounded" src="{{p.head_image.url}}" alt="image">
+            {%else%}
+                <img class="img-fluid rounded" src="https://picsum.photos/750/300?random" alt="image">
+            {%endif%}
             <hr>
+
 
             <!-- Post Content -->
             <p class="lead">{{p.content}}</p>
-
-            <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in
-                    <cite title="Source Title">Source Title</cite>
-                </footer>
-            </blockquote>
 
             <hr>
 
@@ -130,13 +127,13 @@
                 <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                 <div class="media-body">
                     <h5 class="mt-0">Commenter Name</h5>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    comment example
 
                     <div class="media mt-4">
                         <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
                         <div class="media-body">
                             <h5 class="mt-0">Commenter Name</h5>
-                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                            comment example
                         </div>
                     </div>
                 </div>
